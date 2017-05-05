@@ -77,5 +77,10 @@ public class MorphologyFilter extends TokenFilter {
             return true;
         }
     }
+    
+    public void reset() throws IOException {
+        super.reset();
+        save = null;
+    }
 
 }
